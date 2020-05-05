@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo-Jquery-02</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, pulvinar eu erat, at nibh, nibh malesuada. Venenatis at eleifend. Pellentesque tempus placerat, nibh odio, elit ea justo. Cum donec. Diam imperdiet, conubia nunc, sed enim. Tincidunt convallis facilisis, a adipiscing pretium, wisi lectus. Velit eget et, vestibulum nec, est pellentesque.</p>
+
+      <p>  
+        Velit ac non. Volutpat elit, mauris orci libero. Ut nullam tortor. Orci purus sed, ut tincidunt. Cursus non rutrum, litora etiam egestas, tellus elit. Nonummy condimentum, id vehicula nibh, sit ultrices. Mauris elit, ad dapibus. Vel pretium nulla, mattis odio, ligula orci. Quam amet nibh, quis quo posuere, maecenas pede.
+    </p>
+        Mauris mi. Suscipit dolor id, etiam neque, sem praesent natoque. Fermentum ac lectus. Elit donec, quisque auctor sed, nibh tristique. Duis mollis tortor, vel occaecat vel, pretium et. Pede eleifend ac.
+        <p>
+        Suscipit eu, vel facilisis pede, diam sed malesuada. Sagittis venenatis imperdiet. Nibh blandit odio. Diam mauris enim, et nullam platea. Ultricies lectus, tincidunt iste, nec aliquam. Condimentum tortor dui, non rhoncus nisl, etiam nec. At id arcu.
+        
+        +
+        </p>
+        <script>
+        /*
+        $(document).ready(function(){
+            // this is where jQuery lives within our document object
+            console.log("jQuery loaded"+"--");
+            console.log(window.jQuery);
+        })
+
+        */
+        /*
+        $(
+            function(){
+                console.log("another way to load jQuery");
+            }
+        )
+        */
+        /*
+           There are a lot of other javascript libraries out there - some of them
+           actually use the same syntax as jQuery - so they are going to use the dollar
+           sign.So, sometimes the above way of writing is not a good idea to limit jQuery
+           to all of the global scope.
+        */   
+        (function($){
+            console.log("jquery loaded");
+            console.log(window.jQuery);
+        }(jQuery)
+        )
+
+        </script>
+</body>
+</html>
