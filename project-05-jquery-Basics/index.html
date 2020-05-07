@@ -9,7 +9,10 @@
     <script>
     // We have to make this check to ensure that our document is ready for execution
     $(document).ready(function(){
-
+        // We want to change the text on a click of the button
+        $("#btnChange").click(function(){
+           $("p").html("This is the new content!!")
+        });
     })
     </script>
 </head>
