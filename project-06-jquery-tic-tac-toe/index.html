@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe Game</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div id="container1">
+        <label for="level">Choose dificulty level:</label>
+        <select id="level">
+           <option value="default" selected>Select</option>
+           <option value="easy">Easy</option>
+           <option value="hard">Hard</option>
+        </select>
+    </div>
+    <div id="rules">You <span style="color:red">X</span> Computer <span style="color:violet">O</span>
+    <br>
+    Make your Move!
+    </div>
+
+    <div id="grid">
+
+    </div>
+    <div id="container2">
+        <button id="btnResult" disabled>Test Result</button>
+        <button id="btnPlay">Play</button>
+    </div>
+</body>
+</html>
