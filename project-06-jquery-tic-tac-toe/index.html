@@ -21,7 +21,13 @@
     });
         ////
 
+    $(".square").on("click",playersTurn);
+
     })
+
+    function playersTurn(){
+        $(this).addClass("x-mark marked");
+    }
     </script>
     <style>
     #container1, #rules, #container2{
@@ -56,6 +62,9 @@
         border:1px solid black;
         float:left;
         padding: 20px;
+        font-size:50px;
+        text-align: center;
+        line-height: 80px;
     }
     #s1,#s2,#s3{
         border-top:none;
@@ -69,6 +78,10 @@
 
     #s1, #s4, #s7{
         border-left:none;
+    }
+    .x-mark::after{
+        content:"X";
+        color:red;
     }
     </style>
 </head>
