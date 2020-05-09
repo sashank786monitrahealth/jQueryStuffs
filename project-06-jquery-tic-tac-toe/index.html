@@ -26,7 +26,12 @@
     })
 
     function playersTurn(){
-        $(this).addClass("x-mark marked");
+        var thisClass = $(this).attr("class");
+        if (thisClass.indexOf("marked") < 0){
+           $(this).addClass("x-mark marked");
+        } else {
+            alert("already selected");
+        }
     }
     </script>
     <style>
