@@ -29,9 +29,30 @@
         var thisClass = $(this).attr("class");
         if (thisClass.indexOf("marked") < 0){
            $(this).addClass("x-mark marked");
+
+           if ($("#level").val() == "easy"){
+                placeRandom();
+           } else {
+               computerTurnHard();
+           }
+
         } else {
             alert("already selected");
         }
+    }
+
+
+    function placeRandom(){
+        var choose = $(".square:not(.marked)");
+        var randPosition = Math.floor(Math.random()*choose.length);
+        var randElement = choose[randPosition];
+        $(randElement).addClass("o-mark marked");
+        console.log(randPosition);
+        console.log(choose);
+    }
+    
+    function computerTurnHard(){
+
     }
     </script>
     <style>
@@ -87,6 +108,10 @@
     .x-mark::after{
         content:"X";
         color:red;
+    }
+    .o-mark::after{
+        content:"O";
+        color:dodgerblue;
     }
     </style>
 </head>
