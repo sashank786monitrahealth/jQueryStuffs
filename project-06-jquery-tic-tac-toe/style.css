@@ -1,0 +1,57 @@
+#container1, #rules, #container2{
+    text-align: center;
+    margin:10px;
+}
+
+#grid, #rules, #container2{
+    display: none;
+}
+
+label , select{
+    font-size: 25px;
+}
+#rules{
+    font-size:30px;
+}
+#btnResult, #btnPlay{
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 25px;
+    padding:5px;
+}
+#grid{
+    width:400px;
+    margin:0px auto;
+}
+.square{
+    width:80px;
+    height:80px;
+    border:1px solid black;
+    float:left;
+    padding: 20px;
+    font-size:50px;
+    text-align: center;
+    line-height: 80px;
+}
+#s1,#s2,#s3{
+    border-top:none;
+}
+#s3,#s6,#s9{
+    border-right:none;
+}
+#s7,#s8,#s9{
+    border-bottom:none;
+}
+
+#s1, #s4, #s7{
+    border-left:none;
+}
+.x-mark::after{
+    content:"X";
+    color:red;
+}
+.o-mark::after{
+    content:"O";
+    color:dodgerblue;
+}
