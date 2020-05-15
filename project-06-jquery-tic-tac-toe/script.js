@@ -21,6 +21,7 @@
         var thisClass = $(this).attr("class");
         if (thisClass.indexOf("marked") < 0){
            $(this).addClass("x-mark marked");
+           trackWinner($(this).data("position"),"x-mark");
 
            if ($("#level").val() == "easy"){
                 placeRandom();
@@ -39,10 +40,30 @@
         var randPosition = Math.floor(Math.random()*choose.length);
         var randElement = choose[randPosition];
         $(randElement).addClass("o-mark marked");
-        console.log(randPosition);
-        console.log(choose);
+        var currentPos = $(randElement).data("position");
+        trackWinner(currentPos, "o-mark");
     }
+
+
     
     function computerTurnHard(){
+       
+    }
 
+
+    function trackWinner(pos,mark){
+       var winningPos = [[1,2,3],[1,4,7],[1,5,9]
+                       , [2,5,8]
+                       , [3,6,9],[3,5,7]
+                       ,[4,5,6]
+                       ,[7,8,9]];
+
+       $.each(winningPos,function(key,arr){//
+        if(arr.indexOf(pos) >= 0){
+            console.log(mark);
+            console.log(arr);
+
+        }
+           
+       })
     }
