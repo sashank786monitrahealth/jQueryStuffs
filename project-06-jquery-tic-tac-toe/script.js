@@ -57,13 +57,17 @@
                        , [3,6,9],[3,5,7]
                        ,[4,5,6]
                        ,[7,8,9]];
+       if ($(".x-mark").length >=3 || $(".o-mark").length >= 3) {
 
-       $.each(winningPos,function(key,arr){//
-        if(arr.indexOf(pos) >= 0){
-            console.log(mark);
-            console.log(arr);
 
-        }
-           
-       })
+            $.each(winningPos,function(key,arr){//
+                if(arr.indexOf(pos) >= 0){
+                    console.log(mark);
+                    console.log(arr);
+        
+                }
+                
+            })
+
+       }
     }
