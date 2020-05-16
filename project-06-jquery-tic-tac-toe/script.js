@@ -62,8 +62,21 @@
 
             $.each(winningPos,function(key,arr){//
                 if(arr.indexOf(pos) >= 0){
-                    console.log(mark);
                     console.log(arr);
+                    var marksInARow = 0;
+                    $.each(arr, function(index, value){
+                        var classNames = $("#s"+value).attr("class");
+                        if (classNames.indexOf(mark) >= 0){
+                            marksInARow++;
+                            if (marksInARow == 3){
+                                if(mark == "x-mark"){
+                                    console.log("You Win.");
+                                } else if (mark == "o-mark"){
+                                    console.log("You Lost.");
+                                }
+                            }
+                        }
+                    })
         
                 }
                 
