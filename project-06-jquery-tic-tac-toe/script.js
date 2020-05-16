@@ -1,4 +1,6 @@
 
+    var finished = false;  // global variable 
+    
     $(document).ready(function(){
         for(var i=1;i<=9;i++){
             $("#grid").append("<div class=square id=s"+i+" data-position="+i+"></div>")
@@ -61,6 +63,10 @@
 
 
             $.each(winningPos,function(key,arr){//
+                if (finished == true)
+                   return false;
+
+                   
                 if(arr.indexOf(pos) >= 0){
                     console.log(arr);
                     var marksInARow = 0;
@@ -69,11 +75,13 @@
                         if (classNames.indexOf(mark) >= 0){
                             marksInARow++;
                             if (marksInARow == 3){
+                                finished = true;
                                 if(mark == "x-mark"){
                                     console.log("You Win.");
                                 } else if (mark == "o-mark"){
                                     console.log("You Lost.");
                                 }
+                                return false;
                             }
                         }
                     })
