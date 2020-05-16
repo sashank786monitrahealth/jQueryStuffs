@@ -26,3 +26,8 @@ document.onload = pageLoadedFunction("2");
 function hideme(sel){
     document.querySelector(sel).style.display = "none";
 }
+
+function hidemeJQuery(sel){
+    $(sel).hide();
+}
+// usage: hidemeJQuery('p');
