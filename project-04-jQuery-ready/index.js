@@ -12,7 +12,7 @@ $(function(){
 })
 
 
-
+// https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event
 document.addEventListener("DOMContentLoaded", pageLoadedFunction('1'));
 
 function pageLoadedFunction(num){
@@ -21,3 +21,8 @@ function pageLoadedFunction(num){
 
 
 document.onload = pageLoadedFunction("2");
+
+//hide paragraph in javascript
+function hideme(sel){
+    document.querySelector(sel).style.display = "none";
+}
