@@ -31,3 +31,5 @@ function hidemeJQuery(sel){
     $(sel).hide();
 }
 // usage: hidemeJQuery('p');
+// opposite of hide is show
+// $('p').show()
