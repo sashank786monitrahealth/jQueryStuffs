@@ -77,9 +77,11 @@
                             if (marksInARow == 3){
                                 finished = true;
                                 if(mark == "x-mark"){
-                                    console.log("You Win.");
+                                    displayResult("You Win!","win");
+                                    //console.log("You Win.");
                                 } else if (mark == "o-mark"){
-                                    console.log("You Lost.");
+                                    displayResult("You Lost!","lost")
+                                    //console.log("You Lost.");
                                 }
                                 return false;
                             }
@@ -91,4 +93,11 @@
             })
 
        }
+    }
+
+    function displayResult(message, className){
+       $("#rules").hide();
+       $("#container2").show();
+       $("#btnResult").html(message);
+       $("#btnResult").addClass(className);
     }

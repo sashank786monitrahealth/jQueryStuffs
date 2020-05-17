@@ -3,6 +3,10 @@
     margin:10px;
 }
 
+#container2{
+    clear:left;
+}
+
 #grid, #rules, #container2{
     display: none;
 }
@@ -14,15 +18,16 @@ label , select{
     font-size:30px;
 }
 #btnResult, #btnPlay{
+    margin-top:25px;
     background: black;
     color: white;
     border-radius: 5px;
-    font-size: 25px;
+    font-size: 30px;
     padding:5px;
 }
 #grid{
     width:400px;
-    margin:0px auto;
+    margin:50px auto;
 }
 .square{
     width:80px;
@@ -54,4 +59,12 @@ label , select{
 .o-mark::after{
     content:"O";
     color:dodgerblue;
+}
+
+#btnResult.win{
+    background:green;
+}
+
+#btnResult.lost{
+    background:red;
 }
