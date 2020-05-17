@@ -40,5 +40,5 @@ $(function(){
 })
 
 $(function(){
-    $('img').attr({src:'https://smiley.com/static-assets/brand_smiley_main.jpg', 'alt':'smiley-face'});
+    $('img').attr({src:'https://smiley.com/static-assets/brand_smiley_main.jpg', 'alt':'smiley-face-added'});
 })
