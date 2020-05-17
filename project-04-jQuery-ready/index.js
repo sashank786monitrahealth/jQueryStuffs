@@ -33,3 +33,7 @@ function hidemeJQuery(sel){
 // usage: hidemeJQuery('p');
 // opposite of hide is show
 // $('p').show()
+
+$(function(){
+    $('p').attr('title','first paragraph');
+})
