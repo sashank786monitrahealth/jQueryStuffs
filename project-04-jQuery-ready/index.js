@@ -38,3 +38,7 @@ $(function(){
     $('p').attr('title','first paragraph');
     $('img').attr('src','https://via.placeholder.com/300')
 })
+
+$(function(){
+    $('img').attr({src:'https://smiley.com/static-assets/brand_smiley_main.jpg', 'alt':'smiley-face'});
+})
