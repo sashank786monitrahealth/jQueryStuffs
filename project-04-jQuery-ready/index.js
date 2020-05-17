@@ -36,4 +36,5 @@ function hidemeJQuery(sel){
 
 $(function(){
     $('p').attr('title','first paragraph');
+    $('img').attr('src','https://via.placeholder.com/300')
 })
