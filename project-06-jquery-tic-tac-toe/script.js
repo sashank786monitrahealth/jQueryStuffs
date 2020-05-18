@@ -101,3 +101,15 @@
        $("#btnResult").html(message);
        $("#btnResult").addClass(className);
     }
+
+
+    function resetGame(){
+        finished = false;
+        $("#container2").hide();
+        $("#container1").show();
+        $("#grid").hide();
+        $("#level").val("default");
+        $(".square").removeClass("x-mark o-mark marked");
+        $("#btnResult").html("");
+        $("#btnResult").removeClass();
+    }
