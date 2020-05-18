@@ -34,6 +34,11 @@
         } else {
             alert("already selected");
         }
+
+        if ($(".marked").length == 9 && finished == false)  {
+           displayResult("Draw!", "draw");
+           finished = true;
+        }
     }
 
 

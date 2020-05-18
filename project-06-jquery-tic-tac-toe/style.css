@@ -68,3 +68,8 @@ label , select{
 #btnResult.lost{
     background:red;
 }
+
+
+#btnResult.draw{
+    background:gray;
+}
