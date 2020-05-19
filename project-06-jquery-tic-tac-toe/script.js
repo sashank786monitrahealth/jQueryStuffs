@@ -54,7 +54,8 @@
 
     
     function computerTurnHard(){
-       
+       var chooseX = $(".x-mark");
+       console.log(chooseX);
     }
 
 
@@ -73,7 +74,7 @@
 
                    
                 if(arr.indexOf(pos) >= 0){
-                    console.log(arr);
+                    //console.log(arr);
                     var marksInARow = 0;
                     $.each(arr, function(index, value){
                         var classNames = $("#s"+value).attr("class");
