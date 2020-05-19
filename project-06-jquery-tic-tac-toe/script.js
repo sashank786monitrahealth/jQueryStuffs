@@ -55,7 +55,12 @@
     
     function computerTurnHard(){
        var chooseX = $(".x-mark");
-       console.log(chooseX);
+       //console.log(chooseX);
+       var arrX = [];
+       chooseX.map(function(){
+          arrX.push($(this).data("position"))
+       })
+       console.log(arrX);
     }
 
 
