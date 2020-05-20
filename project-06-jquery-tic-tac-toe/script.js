@@ -59,8 +59,9 @@
        var arrX = [];
        chooseX.map(function(){
           arrX.push($(this).data("position"))
-       })
-       console.log(arrX);
+       });
+       var joinedArr = arrX.join("");
+       console.log(joinedArr);
     }
 
 
