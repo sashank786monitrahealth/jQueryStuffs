@@ -73,6 +73,14 @@
        });
        var joinedArr = arrX.join("");
        console.log(joinedArr);
+
+       if (chooseX.length == 1){
+           if($(".x-mark").attr("id") !="s5"){
+               $("#s5").addClass("o-mark marked");
+           } else {
+            $("#s1").addClass("o-mark marked");
+           }
+       }
     }
 
 
