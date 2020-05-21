@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo - Lock Combination Guess</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>welcome to myPage</h1>
+    <div id="start" class="btn">Start</div>
+    <div id="output">
+            <small>Message</small>
+        <input type="number" name="lock1" min="0" max="9">
+        <input type="number" name="lock2" min="0" max="9">
+        <input type="number" name="lock3" min="0" max="9">
+        <div class="btn">Open Lock &#128274</div>
+    </div>
+    <script type="text/javascript">
+       $(document).ready(function(){
+           $('input[type="number"]').css({
+               color:'white',
+               fontSize:'3em',
+               width:'60px',
+               border:'1px solid black',
+               backgroundColor:'dodgerblue'
+           });
+
+           // select the button
+           $('.btn').css({
+               backgroundColor:'black',
+               color:'white',
+               width:'160px',
+               fontSize:'1.5em',
+               padding:'15px',
+               margin:'25px auto 0px',
+               border:'1px solid black',
+               textAlign:'center'
+           })
+
+           // select output
+           $('#output').css({
+               backgroundColor:'#333',
+               width:'300px',
+               padding:'15px',
+               margin:'25px auto 0px',
+               border:'1px solid black',
+               textAlign:'center'
+
+           })
+
+
+           //small 
+           $('small').css({
+               color:'white',
+               fontSize:'1em',
+               padding:'15px',
+               marginBottom:'15px',
+               display:'block'
+           })
+       })
+       
+    </script>
+</body>
+</html>
