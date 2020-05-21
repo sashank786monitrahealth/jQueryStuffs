@@ -80,6 +80,16 @@
            } else {
             $("#s1").addClass("o-mark marked");
            }
+       } else if (chooseX.length == 2){
+           // then loop through chancesToWin object
+           for (var x in chancesToWin){
+               $.each(chancesToWin[x], function(key, withinArray){
+                     if(joinedArr == withinArray.join("")){
+                         $("#s"+x).addClass("o-mark marked");
+                         return false;
+                     }
+               })
+           }
        }
     }
 
