@@ -22,7 +22,22 @@
            $('#output').hide();
            $('#start').click(startGame);
 
+           $('#checkLock').click(openLock);
+
 var ourSecretNumber ='';
+
+function openLock(){
+    var win = 0;
+
+    for(x=0; x<$('input[type="number"]').length;x++){
+        var guessNumber = $('input[type="number"]').eq(x);
+        console.log(ourSecretNumber[x],guessNumber.val());
+    }
+    if (win ==3){
+        $('#start').show();
+        $('small').html('You got it <br>'+ourSecretNumber);
+    }
+}
 
 function startGame(){
     ourSecretNumber = Math.floor(Math.random()*(999-100+1)+100).toString();
