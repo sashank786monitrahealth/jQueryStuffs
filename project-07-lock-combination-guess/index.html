@@ -31,12 +31,28 @@ function openLock(){
 
     for(x=0; x<$('input[type="number"]').length;x++){
         var guessNumber = $('input[type="number"]').eq(x);
-        console.log(ourSecretNumber[x],guessNumber.val());
+        console.log(checkNumber(guessNumber.val(),ourSecretNumber[x]));
     }
     if (win ==3){
         $('#start').show();
         $('small').html('You got it <br>'+ourSecretNumber);
     }
+}
+
+function checkNumber(a,b){
+    var response = {};
+    if(a>b){
+        response.checker = false;
+        response.backgrd = 'red';
+    } else if (a<b) {
+        response.checker = false;
+        response.backgrd = 'dodgerblue';
+    } else if (a==b) {
+        response.checker = true;
+        response.backgrd = 'chartreuse';
+    }
+    return response;
+
 }
 
 function startGame(){
