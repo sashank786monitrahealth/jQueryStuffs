@@ -31,7 +31,14 @@ function openLock(){
 
     for(x=0; x<$('input[type="number"]').length;x++){
         var guessNumber = $('input[type="number"]').eq(x);
-        console.log(checkNumber(guessNumber.val(),ourSecretNumber[x]));
+        var result = checkNumber(guessNumber.val(),ourSecretNumber[x]);
+
+        guessNumber.css({
+            backgroundColor:result.backgrd
+        })
+
+        if (result.checker)
+          win++;
     }
     if (win ==3){
         $('#start').show();
