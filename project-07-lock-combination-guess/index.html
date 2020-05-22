@@ -22,13 +22,19 @@
            $('#output').hide();
            $('#start').click(startGame);
 
+var ourSecretNumber ='';
+
 function startGame(){
+    ourSecretNumber = Math.floor(Math.random()*(999-100+1)+100).toString();
+    console.log(ourSecretNumber);
     $('#start').hide();
     $('#output').show();
 
     for(x=0;x<$('input[type="number"]').length;x++){
         $('input[type="number"]').eq(x).val('5');
     }
+
+    $('small').html("Red background guess is low. Blue background guess is high.");
 }
 
            $('input[type="number"]').css({
@@ -36,7 +42,7 @@ function startGame(){
                fontSize:'3em',
                width:'60px',
                border:'1px solid black',
-               backgroundColor:'dodgerblue'
+               backgroundColor:'black'
            });
 
            // select the button
