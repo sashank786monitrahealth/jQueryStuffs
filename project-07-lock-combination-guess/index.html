@@ -25,6 +25,10 @@
 function startGame(){
     $('#start').hide();
     $('#output').show();
+
+    for(x=0;x<$('input[type="number"]').length;x++){
+        $('input[type="number"]').eq(x).val('5');
+    }
 }
 
            $('input[type="number"]').css({
