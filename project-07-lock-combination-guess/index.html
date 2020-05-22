@@ -15,10 +15,17 @@
         <input type="number" name="lock1" min="0" max="9">
         <input type="number" name="lock2" min="0" max="9">
         <input type="number" name="lock3" min="0" max="9">
-        <div class="btn">Open Lock &#128274</div>
+        <div class="btn" id="checkLock">Open Lock &#128274</div>
     </div>
     <script type="text/javascript">
        $(document).ready(function(){
+           $('#output').hide();
+           $('#start').click(startGame);
+
+function startGame(){
+    
+}
+
            $('input[type="number"]').css({
                color:'white',
                fontSize:'3em',
