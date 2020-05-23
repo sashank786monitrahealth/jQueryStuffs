@@ -37,7 +37,9 @@
         //
         $('a').click(function(event){
             event.preventDefault();
-            console.log("clicked");
+            var parent = $(this).parent();
+            console.log($(parent));
+            console.log(parent);
         })
 
     })
