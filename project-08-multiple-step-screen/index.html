@@ -32,14 +32,17 @@
     </form>
     <script type="text/javascript">
     $(document).ready(function(){
-        $(".step").css("display","none");
+        //$(".step").css("display","none");
 
         //
         $('a').click(function(event){
             event.preventDefault();
             var parent = $(this).parent().parent();
-            console.log($(parent));
-            console.log(parent);
+            //console.log($(parent));
+            //console.log(parent);
+            let mainContent = $(".content>div");
+            let index = mainContent.index(parent);
+            console.log(index);
         })
 
     })
