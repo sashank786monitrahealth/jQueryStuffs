@@ -11,7 +11,7 @@
     <h1>Demo of Multiple Step Screen</h1>
     <form >
         <div class="content">
-            <div><h1>First</h1>This is the first page
+            <div  class="step"><h1>First</h1>This is the first page
                 <div>
                     <a href="#">next</a>
                 </div>
@@ -37,7 +37,7 @@
         //
         $('a').click(function(event){
             event.preventDefault();
-            var parent = $(this).parent().parent();
+            var parent = $(this).closest('.step');
             //console.log($(parent));
             //console.log(parent);
             let mainContent = $(".content>div");
