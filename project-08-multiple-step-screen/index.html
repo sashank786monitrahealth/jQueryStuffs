@@ -39,8 +39,9 @@
             event.preventDefault();
             var parent = $(this).closest('.step');
             let mainContent = $(".content>div");
-            let index = mainContent.index(parent);
+            let index = mainContent.index(parent)+1;
             parent.css('display','none');
+            mainContent.eq(index).css('display','block');
         })
 
     })
