@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>Demo of Multiple Step Screen</h1>
+    <a href="https://www.google.com">Google</a>
     <form >
         <div class="content">
             <div  class="step"><h1>First</h1>This is the first page
@@ -35,7 +36,7 @@
         $(".hiddenStep").css("display","none");
 
         //
-        $('a').click(function(event){
+        $('a[href="#"]').click(function(event){
             event.preventDefault();
             var parent = $(this).closest('.step');
             let mainContent = $(".content>div");
