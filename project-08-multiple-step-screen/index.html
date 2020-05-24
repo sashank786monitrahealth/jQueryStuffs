@@ -16,13 +16,13 @@
                     <a href="#">next</a>
                 </div>
             </div>
-            <div class="step">
+            <div class="step hiddenStep">
                 <h1>Second</h1>This is the second page
                 <div>
                     <a href="#">next</a>
                 </div>
             </div>
-            <div class="step">
+            <div class="step hiddenStep">
                 <h1>Third</h1>This is the third page
                 <div>
                     <a href="#">next</a>
@@ -32,17 +32,15 @@
     </form>
     <script type="text/javascript">
     $(document).ready(function(){
-        //$(".step").css("display","none");
+        $(".hiddenStep").css("display","none");
 
         //
         $('a').click(function(event){
             event.preventDefault();
             var parent = $(this).closest('.step');
-            //console.log($(parent));
-            //console.log(parent);
             let mainContent = $(".content>div");
             let index = mainContent.index(parent);
-            console.log(index);
+            parent.css('display','none');
         })
 
     })
