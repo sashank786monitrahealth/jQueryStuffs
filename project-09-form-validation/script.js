@@ -6,6 +6,7 @@ $(document).ready(function(){
 
     function validateMe(){
       console.log("validate me");
+      $('#myForm').submit();
     };
 
 })
