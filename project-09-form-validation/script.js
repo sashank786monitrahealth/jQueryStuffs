@@ -7,13 +7,17 @@ $(document).ready(function(){
     function validateMe(){
       console.log("validate me");
      
-      var okay = false;
+      var error = [];
       //console.log($('#myForm input'));
       // grabs each element and allows us to loop through it
       $('#myForm input').each(function(){
-          console.log($(this).attr("name"))
+          if ($(this).val().length > 4){
+            console.log($(this).attr("name"))
+        } else {
+            error.push($(this).attr("name"));
+        }
       })
-      if (okay){ $('#myForm').submit(); }
+      if (error.length == 0){ $('#myForm').submit(); }
     };
 
 })
