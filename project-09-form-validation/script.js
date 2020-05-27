@@ -11,7 +11,7 @@ $(document).ready(function(){
       //console.log($('#myForm input'));
       // grabs each element and allows us to loop through it
       $('#myForm input').each(function(){
-          console.log($(this).val())
+          console.log($(this).val().length)
       })
       if (okay){ $('#myForm').submit(); }
     };
