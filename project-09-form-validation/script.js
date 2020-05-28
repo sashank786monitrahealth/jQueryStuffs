@@ -5,6 +5,8 @@ $(document).ready(function(){
 
 
     function validateMe(){
+      $('label').css('color','black');
+
       console.log("validate me");
       var emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       var error = [];
@@ -23,6 +25,14 @@ $(document).ready(function(){
         }
       })
       if (error.length == 0){ $('#myForm').submit(); }
+      else {
+          for(var x=0; x<error.length;x++){
+              $('label[for="'+error[x]+'"]').css(
+                  'color','red'
+              )
+          }
+          console.log(error);
+      }
     };
 
 })
