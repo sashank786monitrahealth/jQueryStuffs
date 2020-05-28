@@ -11,13 +11,12 @@ $(document).ready(function(){
       //console.log($('#myForm input'));
       // grabs each element and allows us to loop through it
       $('#myForm input').each(function(){
+          var inputName = $(this).attr('name');
           if ($(this).val().length > 4){
-            console.log($(this).attr("name"));
-            if(!emailReg.test($(this).val())){
+            //console.log($(this).attr("name"));
+            if(inputName == 'email' && !emailReg.test($(this).val())){
                 console.log("invalid email");
-            } else {
-                console.log("valid email");
-            }
+            } 
         } else {
             error.push($(this).attr("name"));
 
