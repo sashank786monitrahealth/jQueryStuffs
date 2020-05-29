@@ -8,7 +8,8 @@ $(document).ready(function(){
         width:'150px',
         backgroundColor:'red',
         fontSize:'2em',
-        marginBottom:'10px'
+        marginBottom:'10px',
+        color:'white'
     })
 
     $('#findme').css({
