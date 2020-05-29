@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('#output').hide();
+    $('#gameArea').hide();
     $('#start').click(startGame);
     $('#start').css({
         border:'1px solid black',
@@ -14,11 +14,12 @@ $(document).ready(function(){
     $('#findme').css({
         border:'1px solid black',
         textAlign:'center',
-        padding:'10px',
-        width:'150px',
-        backgroundColor:'dodgerblue',
-        fontSize:'2em',
-        marginBottom:'10px'
+        padding:'0px',
+        width:'400px',
+        //backgroundColor:'dodgerblue',
+        Height:'100px',
+        display:'inline-block',
+        fontSize:'2em'
     })
 
     function startGame(){
