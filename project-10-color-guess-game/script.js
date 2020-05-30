@@ -34,13 +34,19 @@ $(document).ready(function(){
 
     }
 
+    function randomColor(){
+        return '#'+((1<<24)*Math.random() | 0).toString(16);
+    }
+
     function makeBoard(){
         var x = 4;
         var html = '';
         for(var row=0; row<x; row++){
            html+='<div class="row">';
            for(var col=0; col<x;col++){
-               html+='<div class="cell">0</div>';
+               var trackColor = randomColor();
+               console.log(trackColor);
+               html+='<div class="cell" style="background-color:'+trackColor+'">0</div>';
            }
            html +="</div>";
         }
@@ -56,7 +62,7 @@ $(document).ready(function(){
             height:'100px',
             display:'inline-block', // stack one next to another
             fontSize:'2em',
-            color:'white'
+            color:'black'
 
         })
     }
