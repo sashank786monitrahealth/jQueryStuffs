@@ -1,6 +1,9 @@
 $(document).ready(function(){
+    var colorArray = [];
+
     $('#gameArea').hide();
     $('#start').click(startGame);
+    $('#output').on('click','.cell',checkCell);
     $('#start').css({
         border:'1px solid black',
         textAlign:'center',
@@ -23,6 +26,10 @@ $(document).ready(function(){
         fontSize:'2em'
     })
 
+    function checkCell(){
+        console.log("cell clicked");
+    }
+
     function startGame(){
         makeBoard();
         pickMyColor();
@@ -39,13 +46,13 @@ $(document).ready(function(){
     }
 
     function makeBoard(){
-        var x = 4;
+        var x = 5;
         var html = '';
         for(var row=0; row<x; row++){
            html+='<div class="row">';
            for(var col=0; col<x;col++){
                var trackColor = randomColor();
-               console.log(trackColor);
+               colorArray.push(trackColor);
                html+='<div class="cell" style="background-color:'+trackColor+'">0</div>';
            }
            html +="</div>";
