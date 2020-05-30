@@ -28,6 +28,11 @@ $(document).ready(function(){
 
     function checkCell(){
         var currColor = $(this).css('backgroundColor');
+        if(currColor ==$("#findme").css('backgroundColor')){
+           console.log('correct')
+        } else {
+           console.log('wrong');
+        }
     }
 
     function startGame(){
