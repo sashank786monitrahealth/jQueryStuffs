@@ -24,7 +24,26 @@ $(document).ready(function(){
     })
 
     function startGame(){
+        makeBoard();
+        pickMyColor();
+        $('#gameArea').show();
         console.log("game started");
     }
 
+    function pickMyColor(){
+
+    }
+
+    function makeBoard(){
+        var x = 4;
+        var html = '';
+        for(var row=0; row<x; row++){
+           html+='<div class="row">';
+           for(var col=0; col<x;col++){
+               html+='<div class="cell">0</div>';
+           }
+           html +="</div>";
+        }
+        $('#output').html(html);
+    }
 })
