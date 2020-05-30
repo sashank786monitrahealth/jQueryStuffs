@@ -56,7 +56,13 @@ $(document).ready(function(){
     }
 
     function randomColor(){
-        return '#'+((1<<24)*Math.random() | 0).toString(16);
+        //return '#'+((1<<24)*Math.random() | 0).toString(16);
+        var r = Math.floor(Math.random()*256);
+        var g = Math.floor(Math.random()*256);
+        var b = Math.floor(Math.random()*256);
+
+        var rgb = 'rgb('+r+','+g+','+b+')';
+        return rgb;
     }
 
     function addNewColor(){
