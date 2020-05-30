@@ -27,7 +27,7 @@ $(document).ready(function(){
     })
 
     function checkCell(){
-        console.log($(this).css('backgroundColor'));
+        var currColor = $(this).css('backgroundColor');
     }
 
     function startGame(){
@@ -38,7 +38,9 @@ $(document).ready(function(){
     }
 
     function pickMyColor(){
-
+        var index = Math.floor(Math.random()*colorArray.length);
+        var picked = colorArray.splice(index,1);
+        $('#findme').css('background-color',picked);
     }
 
     function randomColor(){
@@ -46,7 +48,7 @@ $(document).ready(function(){
     }
 
     function makeBoard(){
-        var x = 5;
+        var x = 4;
         var html = '';
         for(var row=0; row<x; row++){
            html+='<div class="row">';
