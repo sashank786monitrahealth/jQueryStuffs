@@ -27,7 +27,7 @@ $(document).ready(function(){
     })
 
     function checkCell(){
-        console.log("cell clicked");
+        console.log($(this).css('backgroundColor'));
     }
 
     function startGame(){
