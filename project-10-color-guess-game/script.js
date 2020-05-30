@@ -55,15 +55,19 @@ $(document).ready(function(){
         return '#'+((1<<24)*Math.random() | 0).toString(16);
     }
 
+    function addNewColor(){
+        var trackColor = randomColor();
+        colorArray.push(trackColor);
+        return trackColor;
+    }
+
     function makeBoard(){
         var x = 4;
         var html = '';
         for(var row=0; row<x; row++){
            html+='<div class="row">';
            for(var col=0; col<x;col++){
-               var trackColor = randomColor();
-               colorArray.push(trackColor);
-               html+='<div class="cell" style="background-color:'+trackColor+'">0</div>';
+               html+='<div class="cell" style="background-color:'+addNewColor()+'">0</div>';
            }
            html +="</div>";
         }
