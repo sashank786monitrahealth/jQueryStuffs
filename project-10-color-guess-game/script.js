@@ -29,7 +29,10 @@ $(document).ready(function(){
     function checkCell(){
         var currColor = $(this).css('backgroundColor');
         if(currColor ==$("#findme").css('backgroundColor')){
-           console.log('correct')
+           var cntValue = Number($(this).text());
+           cntValue++;
+           //console.log(cntValue);
+           $(this).text(cntValue);
         } else {
            console.log('wrong');
         }
