@@ -45,5 +45,19 @@ $(document).ready(function(){
            html +="</div>";
         }
         $('#output').html(html);
+        $('.cell').css({
+            border:'1px solid black',
+            textAlign:'center',
+            padding:'0px',
+            margin:'0px',
+
+            width:'100px',
+            //backgroundColor:'dodgerblue',
+            height:'100px',
+            display:'inline-block', // stack one next to another
+            fontSize:'2em',
+            color:'white'
+
+        })
     }
 })
