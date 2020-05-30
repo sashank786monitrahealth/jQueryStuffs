@@ -33,20 +33,24 @@ $(document).ready(function(){
            cntValue++;
            //console.log(cntValue);
            $(this).text(cntValue);
+           $(this).css('backgroundColor',addNewColor());
+           pickMyColor();
+           $('#message').html("Correct");
         } else {
-           console.log('wrong');
+            $('#message').html("Wrong");
         }
     }
 
     function startGame(){
         makeBoard();
         pickMyColor();
+        $('#start').hide();
         $('#gameArea').show();
         console.log("game started");
     }
 
     function pickMyColor(){
-        var index = Math.floor(Math.random()*colorArray.length);
+        var index = Math.floor(Math.random()*(colorArray.length));
         var picked = colorArray.splice(index,1);
         $('#findme').css('background-color',picked);
     }
