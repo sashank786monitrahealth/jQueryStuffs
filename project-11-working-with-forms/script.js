@@ -35,6 +35,16 @@ $('#myClick').click(function(){
     vLastName = $('input[name="last"]').val();
     console.log(vFirstName);
     $('h1').text(vFirstName+" "+vLastName);
+
+    var checkButtons = $('input:checked').map(function(){
+        return $(this).val();
+    });
+    
+    console.log(checkButtons);
+
+
 })
+
+
 
 })
