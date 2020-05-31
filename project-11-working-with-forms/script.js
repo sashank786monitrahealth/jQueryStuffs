@@ -22,8 +22,11 @@ $('form').submit(function(e){
     e.preventDefault();
     console.log("Please do not submit me!");
 
-$('form').css('background-color','blue');
-
+    if ($('input:checked').length > 0){
+       $('form').css('background-color','blue');
+    } else {
+        $('form').css('background-color','chartreuse');
+    }
 })
 
 })
