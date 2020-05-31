@@ -13,9 +13,17 @@ $('.btn').click(function(){
     });
     console.log(myCheckBoxes.val());
     */
-   var checkedButtons = $('input:checked');
+   var checkedButtons = $('input:checked').val();
    console.log(checkedButtons);
 })
 
+
+$('form').submit(function(e){
+    e.preventDefault();
+    console.log("Please do not submit me!");
+
+$('form').css('background-color','blue');
+
+})
 
 })
