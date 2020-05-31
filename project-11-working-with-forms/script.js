@@ -29,4 +29,12 @@ $('form').submit(function(e){
     }
 })
 
+$('#myClick').click(function(){
+    console.log('Click Here!!');
+    vFirstName = $('input[name="first"]').val();
+    vLastName = $('input[name="last"]').val();
+    console.log(vFirstName);
+    $('h1').text(vFirstName+" "+vLastName);
+})
+
 })
