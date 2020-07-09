@@ -1,5 +1,6 @@
 $(function(){
     var counter = 0;
+    /*
     $('.highlight').dblclick(function(){
         $(this).text('Double Click!!')
     })
@@ -11,4 +12,8 @@ $(function(){
     $('.highlight').hover(function(){
         $(this).text('Hover over Me!!');
     })
+    */
+   $('.highlight').mousedown(function(){
+       $(this).text("Mouse down!");
+   })
 })
