@@ -16,4 +16,7 @@ $(function(){
    $('.highlight').mousedown(function(){
        $(this).text("Mouse down!");
    })
+   $('.highlight').mouseup(function(){
+       $(this).text("Mouse up!");
+   })
 })
