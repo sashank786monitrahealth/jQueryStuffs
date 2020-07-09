@@ -24,8 +24,13 @@ $(function(){
    $('.highlight').mouseleave(function(){
        $(this).text("mouse leaves.")
    })
-   */
   $('.highlight').mousemove(function(){
       $(this).text("mouse moved.")
   })
+   */
+  
+   $('.highlight').mouseout(function(){
+      $(this).text("mouse out.")
+  })
+
 })
