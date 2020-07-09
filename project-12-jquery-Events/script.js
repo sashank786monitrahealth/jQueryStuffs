@@ -22,4 +22,7 @@ $(function(){
    $('.highlight').mouseenter(function(){
        $(this).text("mouse entered.")
    })
+   $('.highlight').mouseleave(function(){
+       $(this).text("mouse leaves.")
+   })
 })
