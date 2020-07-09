@@ -27,10 +27,13 @@ $(function(){
   $('.highlight').mousemove(function(){
       $(this).text("mouse moved.")
   })
-   */
   
    $('.highlight').mouseout(function(){
       $(this).text("mouse out.")
+  })
+   */
+  $('.highlight').mouseout(function(){
+      $(this).text("superman - spiderman")
   })
 
 })
