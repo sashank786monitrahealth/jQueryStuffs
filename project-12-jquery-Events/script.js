@@ -12,7 +12,6 @@ $(function(){
     $('.highlight').hover(function(){
         $(this).text('Hover over Me!!');
     })
-    */
    $('.highlight').mousedown(function(){
        $(this).text("Mouse down!");
    })
@@ -25,4 +24,8 @@ $(function(){
    $('.highlight').mouseleave(function(){
        $(this).text("mouse leaves.")
    })
+   */
+  $('.highlight').mousemove(function(){
+      $(this).text("mouse moved.")
+  })
 })
