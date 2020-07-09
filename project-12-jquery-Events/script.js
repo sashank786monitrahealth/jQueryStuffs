@@ -19,4 +19,7 @@ $(function(){
    $('.highlight').mouseup(function(){
        $(this).text("Mouse up!");
    })
+   $('.highlight').mouseenter(function(){
+       $(this).text("mouse entered.")
+   })
 })
