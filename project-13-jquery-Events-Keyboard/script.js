@@ -5,6 +5,10 @@ $(function(){
         $(this).css('background-color','yellow');
     })
 
+    $('.sel').change(function(){
+        console.log($(this).val())
+    })
+  /*
     $('input').blur(function(){
         $(this).css('background-color','white');
     })
@@ -19,4 +23,5 @@ $(function(){
     $('input').keyup(function(){
         $(this).css('color','dodgerblue');
     })
+    */
 })
