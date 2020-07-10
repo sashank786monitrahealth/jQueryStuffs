@@ -7,6 +7,7 @@ $(function(){
 
     $('.sel').change(function(){
         console.log($(this).val())
+        $('body').css('background-color',$(this).val())
     })
   /*
     $('input').blur(function(){
