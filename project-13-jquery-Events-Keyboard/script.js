@@ -13,4 +13,10 @@ $(function(){
           newtext += e.key;
           $('.highlight').text(newtext);
     })
+    $('input').keydown(function(e){
+        $(this).css('color','red');
+    })
+    $('input').keyup(function(){
+        $(this).css('color','dodgerblue');
+    })
 })
