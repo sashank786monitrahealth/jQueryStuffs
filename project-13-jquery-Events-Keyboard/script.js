@@ -1,5 +1,6 @@
 $(function(){
-    var counter = 0;
+    var newtext = "";
+    
     $('input').focus(function(){
         $(this).css('background-color','yellow');
     })
