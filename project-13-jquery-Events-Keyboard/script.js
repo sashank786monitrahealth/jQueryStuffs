@@ -1,6 +1,6 @@
 $(function(){
     var newtext = "";
-    
+
     $('input').focus(function(){
         $(this).css('background-color','yellow');
     })
@@ -10,5 +10,7 @@ $(function(){
     })
     $('input').keypress(function(e){
           console.log(e.key);
+          newtext += e.key;
+          $('.highlight').text(newtext);
     })
 })
