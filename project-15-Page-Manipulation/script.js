@@ -11,6 +11,9 @@ $(
             $(this).hide(5000,function(){
                 $(this).next().css('background-color','blue')
             })
+
+          $('h1').toggle();
+
         })
 
         $('.sel').change(function(){
