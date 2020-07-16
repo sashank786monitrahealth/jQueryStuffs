@@ -14,7 +14,9 @@ $(
         })
 
         $('.sel').change(function(){
-            $('.highlight').show()
+            $('.highlight').show(500, function(){
+                $('.highlight').css('background-color',$('.sel').val());
+            })
       })
 
 })
