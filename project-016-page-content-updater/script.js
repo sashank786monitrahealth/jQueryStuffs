@@ -4,6 +4,7 @@ $(
         $('.highlight').click(function(){
             counter++;
             $(this).append('clicked'+counter);
+            $(this).prepend('Pre');
         })
     }
 )
