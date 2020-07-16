@@ -13,4 +13,8 @@ $(
             })
         })
 
+        $('.sel').change(function(){
+            $('.highlight').show()
+      })
+
 })
