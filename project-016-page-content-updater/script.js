@@ -11,7 +11,7 @@ $(
 
      $('h1').click(function(){
          counter++
-         $('h1').before(counter)
+         $('h1').prepend(counter)
      })
 
     })
