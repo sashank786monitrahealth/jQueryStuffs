@@ -3,7 +3,8 @@ $(
         var counter = 0;
         $('.highlight').click(function(){
             counter++;
-            $(this).empty();
+            //$(this).empty();
+            $(this).html('');
             $(this).before('BEFORE '+counter);
             $(this).append('clicked '+counter);
             $(this).prepend('Pre '+counter);
