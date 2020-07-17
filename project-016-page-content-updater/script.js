@@ -10,7 +10,8 @@ $(
         })
 
      $('h1').click(function(){
-         $(this).before('Hey There !')
+         counter++
+         $('h1').before(counter)
      })
 
     })
