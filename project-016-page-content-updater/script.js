@@ -8,5 +8,9 @@ $(
             $(this).prepend('Pre '+counter);
             $(this).after('AFTER '+counter);
         })
-    }
-)
+
+     $('h1').click(function(){
+         $(this).before('Hey There !')
+     })
+
+    })
