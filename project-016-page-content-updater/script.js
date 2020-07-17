@@ -6,6 +6,7 @@ $(
             $(this).before('BEFORE '+counter);
             $(this).append('clicked '+counter);
             $(this).prepend('Pre '+counter);
+            $(this).after('AFTER '+counter);
         })
     }
 )

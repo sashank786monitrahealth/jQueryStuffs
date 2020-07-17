@@ -39,6 +39,20 @@ $(function(){
     $('img').attr('src','https://via.placeholder.com/300')
 })
 
-$(function(){
+$(function(e){
+    //console.log("e = ");
+    //console.dir(e);
     $('img').attr({src:'https://smiley.com/static-assets/brand_smiley_main.jpg', 'alt':'smiley-face-added'});
 })
+
+
+// option
+$(function(e){
+    //console.log("e = ");
+    //console.dir(e);
+    $('img').attr({src:'https://smiley.com/static-assets/brand_smiley_main.jpg', 'alt':'smiley-face-added'});
+})
+
+$('img').attr({src:function(e){
+    console.log(e);
+}})
