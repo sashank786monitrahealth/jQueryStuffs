@@ -5,7 +5,9 @@ $(function(){
     $('button').on('click', submitForm);
 
     function submitForm(){
-        console.log('submit clicked');
+        var formValues = $('form').serialize();
+        console.log(formValues)
+        //console.log('submit clicked');
     }
 
     // submitButton is the function we will call on clicking the button
