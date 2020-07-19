@@ -4,7 +4,7 @@ $(
         $('div > div > div').click(function(){
             console.log($(this).html());
             // get the first child of the mainDiv
-            console.log($('#mainDiv').first());
+            console.log($('#mainDiv').first().hasClass('highlight'));
         })
     }
 )
