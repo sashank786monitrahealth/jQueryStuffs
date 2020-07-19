@@ -2,7 +2,7 @@ $(
     function(){
         // select div inside div
         $('div > div').click(function(){
-            console.log($(this));
+            console.log($(this).text);
         })
     }
 )
