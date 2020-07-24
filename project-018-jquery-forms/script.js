@@ -11,6 +11,7 @@ $(function(){
         console.log(tempHolder);
 
         $('#mainDiv').empty();
+        $('input').css('background-color','white');
 
         //console.log('submit clicked');
         $.each(tempHolder, function(index, value){
