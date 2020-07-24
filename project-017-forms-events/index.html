@@ -4,35 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Demo - Keyboard Events</title>
+    <title>jQuery - Working with Forms</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-<div>
-<input type="text" id="input1" value="hello">
-<input type="text" id="input2" value="world">
+    <div id="wrapper">
+        <h1>jQuery Course</h1>
 
-<select class="sel" name="" id="">
-    <option value="blue">blue</option>
-    <option value="green">green</option>
-    <option value="red">red</option>
-    <option value="white">white</option>
-</select>
+        <div>
+            <div>
+                <form id="myForm">
+                    <label for="first">FirstName:</label>
+                    <input type="text" name="first">
+                    <br>
 
-</div>
+                    <label for="last">LastName:</label>
+                    <input type="text" name="last">
+                    <br>
 
-    <h1>Keyboard Events</h1>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email">
+                    <br>
 
-    <div class="highlight" title="element1"> choose element 1</div>
-    <div class="highlight" title="element2"> choose element 2</div>
-    <div class="highlight" title="element3"> choose element 3</div>
-    <div class="highlight" title="element4"> choose element 4</div>
-    <div class="highlight" title="element5"> choose element 5</div>
-    <div class="highlight" title="element6"> choose element 6</div>
-    <div class="highlight" title="element7"> choose element 7</div>
-    <div class="highlight" title="element8"> choose element 8</div>
-    <div class="highlight" title="element9"> choose element 9</div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password">
+                    <br>
 
-    <script src="script.js"></script>
+
+                     <button type="button">Submit</button> 
+                     TOS? <input type="checkbox" name="agree1">  <br>
+                     Do you agree? <input type="checkbox" name="agree2">
+                        <!--
+                <input type="button" value="Submit">
+                -->
+                </form>
+            </div>
+
+            <select class="sel">
+                <option value="blue">blue</option>
+                <option value="red">red</option>
+                <option value="green">green</option>
+            </select>
+
+
+        </div>
+        <h1>Keyboard Events</h1>
+        <div id="mainDiv">
+            <div class="highlight" title="element1"> choose element 1</div>
+            <div class="highlight" title="element2"> choose element 2</div>
+            <div class="highlight" title="element3"> choose element 3</div>
+            <div class="highlight" title="element4"> choose element 4</div>
+            <div class="highlight" title="element5"> choose element 5</div>
+            <div class="highlight" title="element6"> choose element 6</div>
+            <div class="highlight" title="element7"> choose element 7</div>
+            <div class="highlight" title="element8"> choose element 8</div>
+            <div class="highlight" title="element9"> choose element 9</div>
+        </div>
+            <script src="script.js"></script>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 </html>
