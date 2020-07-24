@@ -4,6 +4,12 @@ $(function(){
     function submitForm(){
         var formValues = $('form').serialize();
         var tempHolder = formValues.split('&');
+        var $a = $('input[name="agree1"]');
+        console.log($a.prop('checked'));
+
+
+
+
         outputUpdate(tempHolder);
     }
 
