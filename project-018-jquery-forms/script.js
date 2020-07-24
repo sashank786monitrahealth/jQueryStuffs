@@ -8,7 +8,10 @@ $(function(){
         var formValues = $('form').serialize();
 
         var tempHolder = formValues.split('&')
-        console.log(tempHolder)
+        console.log(tempHolder);
+
+        $('#mainDiv').empty();
+        
         //console.log('submit clicked');
         $.each(tempHolder, function(index, value){
             console.log(index,value)
