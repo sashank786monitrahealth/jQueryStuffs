@@ -6,8 +6,13 @@ $(function(){
 
     function submitForm(){
         var formValues = $('form').serialize();
-        console.log(formValues)
+
+        var tempHolder = formValues.split('&')
+        console.log(tempHolder)
         //console.log('submit clicked');
+        $.each(tempHolder, function(index, value){
+            console.log(index,value)
+        })
     }
 
     // submitButton is the function we will call on clicking the button
