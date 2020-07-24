@@ -11,10 +11,11 @@ $(function(){
         console.log(tempHolder);
 
         $('#mainDiv').empty();
-        
+
         //console.log('submit clicked');
         $.each(tempHolder, function(index, value){
-            console.log(index,value)
+            console.log(index,value);
+            $('#mainDiv').append(value+'<br>')
         })
     }
 
