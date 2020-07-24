@@ -7,14 +7,14 @@ $(function(){
         outputUpdate(tempHolder);
     }
 
-    function outputUpdate(){
+    function outputUpdate(tempHolder){
         $('#mainDiv').empty();
 
         $('input').css('background-color','white');
 
         $.each(tempHolder, function(index,value){
             var elementName = value.split('=');
-            var $el = $('input[name"'+elementName[0]+'"]');
+            var $el = $('input[name="'+elementName[0]+'"]');
 
             if ($el.val() == ''){
                 $el.css('background-color','red')
