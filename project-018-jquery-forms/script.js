@@ -15,7 +15,12 @@ $(function(){
         //console.log('submit clicked');
         $.each(tempHolder, function(index, value){
             console.log(index,value);
-            $('#mainDiv').append(value+'<br>')
+            var elementName = value.split('=');
+            var $el = $('input[name="'+elementName[0]+'"]');
+            if($el.val() == ''){
+                $el.css('background-color','red')
+            }
+            $('#mainDiv').append(elementName[0]+'  '+elementName[1]+'<br>')
         })
     }
 
