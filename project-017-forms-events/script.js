@@ -5,7 +5,11 @@ $(function(){
         var formValues = $('form').serialize();
         var tempHolder = formValues.split('&');
         var $a = $('input[name="agree1"]');
-        console.log($a.prop('checked'));
+        if ($a.prop('checked')){
+            console.log($a.prop('checked'));
+        } else {
+            alert('Please agree to the Terms of Service.')
+        }
 
 
 
