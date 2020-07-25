@@ -6,15 +6,15 @@ $(function(){
         var tempHolder = formValues.split('&');
         var $a = $('input[name="agree1"]');
         if ($a.prop('checked')){
-            console.log($a.prop('checked'));
+            outputUpdate(tempHolder);
         } else {
-            alert('Please agree to the Terms of Service.')
+            alert('Please agree to the Terms of Service before you submit.');
         }
 
 
 
 
-        outputUpdate(tempHolder);
+        
     }
 
     function outputUpdate(tempHolder){
@@ -28,6 +28,7 @@ $(function(){
 
             if ($el.val() == ''){
                 $el.css('background-color','red')
+                $el.after('<div>'+elementName[0]+' value is missing'+'<div>')
             }
 
             $('#mainDiv').append(elementName[0]+' '+elementName[1]+'<br>');
