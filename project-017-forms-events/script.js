@@ -28,7 +28,7 @@ $(function(){
 
             if ($el.val() == ''){
                 $el.css('background-color','red')
-                $el.after('<div>'+elementName[0]+' value is missing'+'<div>')
+                $el.after('<div class="error">'+elementName[0]+' value is missing'+'<div>')
             }
 
             $('#mainDiv').append(elementName[0]+' '+elementName[1]+'<br>');
