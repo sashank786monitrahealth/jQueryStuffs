@@ -12,9 +12,10 @@ $(function(){
         }
 
     }
-    
+
 $('input[name="agree2"]').change(function(){
-    alert('Checked Button '+$(this).attr('name'))
+    //alert('Checked Button '+$(this).attr('name'))
+    $('input').removeAttr('placeholder');
 })
 
         
