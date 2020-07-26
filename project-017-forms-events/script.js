@@ -11,11 +11,14 @@ $(function(){
             alert('Please agree to the Terms of Service before you submit.');
         }
 
-
-
+    }
+    
+$('input[name="agree2"]').change(function(){
+    alert('Checked Button '+$(this).attr('name'))
+})
 
         
-    }
+
 
     function outputUpdate(tempHolder){
         $('#mainDiv').empty();
