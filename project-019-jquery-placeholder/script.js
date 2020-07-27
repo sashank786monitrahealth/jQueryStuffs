@@ -8,7 +8,7 @@ $(function(){
 
   $('input[type="color"]').change(function(){
     var clrValues = $('input[type="color"]');
-    var textHolder = $('input[type="text"]').val();
+    var textHolder = cleanSpace($('input[type="text"]').val());
     var colorBack = cleanHash(clrValues.first().val());
     var colorFront = cleanHash(clrValues.last().val());
     console.log("colorBack = "+colorBack);
@@ -24,6 +24,10 @@ $(function(){
 
 function cleanHash(arg){
     return arg.replace('#','');
+}
+
+function cleanSpace(arg){
+    return arg.replace(' ','+')
 }
 
 })
