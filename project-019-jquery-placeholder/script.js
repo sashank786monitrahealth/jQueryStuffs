@@ -6,7 +6,7 @@ $(function(){
   $('input[type="color"]').last().before('Text Color :');
 
 
-  $('input[type="color"]').change(function(){
+  $('input').change(function(){
     var clrValues = $('input[type="color"]');
     var textHolder = cleanSpace($('input[type="text"]').val());
     var colorBack = cleanHash(clrValues.first().val());
