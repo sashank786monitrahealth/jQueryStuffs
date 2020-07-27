@@ -15,6 +15,7 @@ $(function(){
     console.log("colorFront = "+colorFront);
     var imagePath = 'http://via.placeholder.com/350x150/'+colorBack+'/'+colorFront+"?text="+textHolder;
     $('img').attr('src',imagePath);
+    $('input').last().val(imagePath)
 });
 
   $('input[type="submit"]').click(function(){
