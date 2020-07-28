@@ -5,10 +5,10 @@ $(function(){
         var $el = $('input[type="text"],input[type="password"]');
 
         for(x=0;x<$el.length;x++){
-            console.log($el[x]);
+            console.log($el.eq(x));
         }
 
-        console.log($el);
+        //console.log($el);
     }
 
 
