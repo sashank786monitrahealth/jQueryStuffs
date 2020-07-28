@@ -3,6 +3,11 @@ $(function(){
 
     function submitForm(){
         var $el = $('input[type="text"],input[type="password"]');
+
+        for(x=0;x<$el.length;x++){
+            console.log($el[x]);
+        }
+
         console.log($el);
     }
 
