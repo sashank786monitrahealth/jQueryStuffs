@@ -6,6 +6,7 @@ $(function(){
 
         for(x=0;x<$el.length;x++){
             console.log($el.eq(x).val());
+            console.log($el.eq(x).attr('name'))
         }
 
         //console.log($el);
