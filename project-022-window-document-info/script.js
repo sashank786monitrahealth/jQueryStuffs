@@ -12,6 +12,7 @@ $(function(){
         var $el = $('#wrapper > div').last();
         console.log($el);
         console.log($el.height())
+        console.log($el.width())
     });
         
 
