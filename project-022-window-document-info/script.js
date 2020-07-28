@@ -1,8 +1,8 @@
 $(function(){
    
     $('h1').on('click', function(){
-        var docHeight = $(document).height();
-        var winHeight = $(window).height();
+        var docHeight = $(document).width();
+        var winHeight = $(window).width();
         console.log($(window));
         console.log($(document));
 
