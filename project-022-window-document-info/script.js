@@ -13,6 +13,8 @@ $(function(){
         console.log($el);
         console.log($el.height())
         console.log($el.width())
+        console.log($el.innerHeight());
+        console.log($el.outerHeight());
     });
         
 
