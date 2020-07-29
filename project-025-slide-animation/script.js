@@ -4,6 +4,6 @@ $(function(){
                     'padding':'10px',
                     'width':'150px'
                   }).click(function(){
-              console.log( $(this));
+              console.log( $(this).index());
     })
 })
