@@ -4,6 +4,8 @@ $(function(){
                     'padding':'10px',
                     'width':'150px'
                   }).click(function(){
-              console.log( $(this).index());
+              if( $(this).index() == 1){
+                  $('#output1').slideUp();
+              };
     })
 })
