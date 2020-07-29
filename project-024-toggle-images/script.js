@@ -14,4 +14,8 @@ $(function(){
         $(this).children().toggle();
     })
 
+    $('h1').click(function(){
+        $('#wrapper > div').children().toggle();
+    })
+
 })
