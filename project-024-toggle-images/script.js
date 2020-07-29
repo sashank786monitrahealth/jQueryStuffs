@@ -10,4 +10,8 @@ $(function(){
         $(this).css({"background-color":"lime"})
     })
 
+    $('#wrapper > div').click(function(){
+        $(this).children().toggle();
+    })
+
 })
