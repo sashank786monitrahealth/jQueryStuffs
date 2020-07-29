@@ -4,6 +4,7 @@ $(function(){
  $('img').click(function(){
      var tempSrc = $(this).attr('src');
      console.log(tempSrc);
+     window.open(tempSrc,'Full Image','Window popup')
  })
 
 })
