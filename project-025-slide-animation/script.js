@@ -5,7 +5,7 @@ $(function(){
                     'width':'150px'
                   }).click(function(){
               if( $(this).index() == 1){
-                  $('#output1').slideUp(5000);
+                  $('#output2').slideUp(5000);
               };
     })
 })
