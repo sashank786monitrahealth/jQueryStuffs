@@ -6,6 +6,10 @@ $(function(){
      var tempSrc = $(this).attr('src');
      console.log(tempSrc);
      window.open(tempSrc+'?text='+txtInfo+'','Full Image','Window popup')
- })
+ }).mouseenter(function(){
+     $(this).css('border','1px solid red')
+ }).mouseout(function(){
+    $(this).css('border','1px solid green')
+})
 
 })
