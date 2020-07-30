@@ -5,15 +5,15 @@ $(function(){
                     'width':'150px'
                   }).click(function(){
               if( $(this).index() == 1){
-                  $('#output2').fadeIn(5000, function(){
-                      console.log("fading in");
+                  $('#output2').fadeIn(1000,function(){
+                      console.log("fast")
                   });
               };
 
               if($(this).index() == 2){
-                  $('#output2').fadeOut(5000, function(){
-                      console.log("fading out")
-                  });
+                  $('#output2').fadeTo(5000,0.5, function(){
+                      console.log("Faded to 50%")
+                });
               }
 
               if($(this).index() == 3){
