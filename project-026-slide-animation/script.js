@@ -21,5 +21,10 @@ $(function(){
                       console.log("fade toggle")
                   });
               }
-    })
+    });
+
+    $('.highlight').click(function(){
+        $(this).fadeOut();
+    }
+    )
 })
