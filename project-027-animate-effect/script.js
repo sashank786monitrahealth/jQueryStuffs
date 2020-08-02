@@ -4,4 +4,13 @@ $(function(){
             console.log('first');
         }
     )
+
+
+    $('.btn:eq(1)').click(
+        function(){
+            console.log('second');
+        }
+    )
+
+
 })
