@@ -4,48 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Demo - jQuery Popup Image</title>
+    <title>jQuery - Working with Forms</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div id="wrapper">
-        <h1>Demo - jQuery Popup Image</h1>
-        <div class="btn">Click Me 1</div>
-        <div class="btn">Click Me 2</div>
-        <div class="btn">Click Me 3</div>
-        <div id="output1">Hello World</div>
-        <div id="output2">Hello World
+        <h1>jQuery Course</h1>
 
-            <img src="http://via.placeholder.com/350x150" alt=""><br>
+        <div>
+            <div>
+                <form id="myForm">
+                    <label for="first">FirstName:</label>
+                    <input type="text" name="first">
+                    <br>
+
+                    <label for="last">LastName:</label>
+                    <input type="text" name="last">
+                    <br>
+
+                    <label for="email">Email:</label>
+                    <input type="text" name="email">
+                    <br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" name="password">
+                    <br>
+
+
+                     <button type="button" class="btn">Submit</button> 
+                        <!--
+                <input type="button" value="Submit">
+                -->
+                </form>
+            </div>
+
+            <select class="sel">
+                <option value="blue">blue</option>
+                <option value="red">red</option>
+                <option value="green">green</option>
+            </select>
+
+
         </div>
-        <div id="output3">
-            <img src="http://via.placeholder.com/350x150" alt=""><br>
-            <img src="http://via.placeholder.com/450x150" alt=""><br>
-            <img src="http://via.placeholder.com/550x150" alt=""><br>
-            <img src="http://via.placeholder.com/650x150" alt=""><br>
-            <img src="http://via.placeholder.com/750x150" alt=""><br>
+        <h1>Keyboard Events</h1>
+        <div id="mainDiv">
+            <div class="highlight" title="element1"> choose element 1</div>
+            <div class="highlight" title="element2"> choose element 2</div>
+            <div class="highlight" title="element3"> choose element 3</div>
+            <div class="highlight" title="element4"> choose element 4</div>
+            <div class="highlight" title="element5"> choose element 5</div>
+            <div class="highlight" title="element6"> choose element 6</div>
+            <div class="highlight" title="element7"> choose element 7</div>
+            <div class="highlight" title="element8"> choose element 8</div>
+            <div class="highlight" title="element9"> choose element 9</div>
         </div>
-        <div id="output"></div>
-        <div id="output4">
-<div id="output5">
-    <p class="highlight">welcome 1</p> 
-    <p class="highlight">welcome 2</p> 
-    <p class="highlight">welcome 3</p> 
-    <p class="highlight">welcome 4</p> 
-    <p class="highlight">welcome 5</p> 
-    <p class="highlight">welcome 6</p> 
-</div>
-        </div>
-        <div><img src="" alt=""></div>
-        <form>
-            <input type="text">
-            <input type="color">
-            <input type="color">
-            <input type="submit">
-            <br>
-        </form>
+            <script src="script.js"></script>
     </div>
-
-<script src="script.js"></script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 </html>
