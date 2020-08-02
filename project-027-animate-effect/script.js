@@ -13,4 +13,16 @@ $(function(){
     )
 
 
+    $('.btn:eq(2)').click(
+        function(){
+            console.log('third');
+        }
+    )
+    $('.btn').last().click(
+        function(){
+            console.log('last');
+        }
+    )
+
+
 })
