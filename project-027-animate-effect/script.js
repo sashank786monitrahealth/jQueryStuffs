@@ -1,4 +1,5 @@
 $(function(){
+    $('.btn').css({'border':'1px solid black'});
     $('.btn').first().click(
         function(){
             console.log('first');
