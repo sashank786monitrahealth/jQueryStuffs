@@ -7,7 +7,7 @@ $(function(){
 
     $('.btn').first().click(
         function(){
-            $('#output2').animate({
+            $('#output1').animate({
                 "font-size":"25px"
             })
             console.log('first');
