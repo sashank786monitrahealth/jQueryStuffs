@@ -1,7 +1,8 @@
 $(function(){
 
     $('.btn').css({'border':'1px solid black', 
-                   'padding':'10px'
+                   'padding':'10px',
+                   'width':'150px'
                   });
 
     $('.btn').first().click(
