@@ -1,5 +1,9 @@
 $(function(){
-    $('.btn').css({'border':'1px solid black'});
+
+    $('.btn').css({'border':'1px solid black', 
+                   'padding':'10px'
+                  });
+
     $('.btn').first().click(
         function(){
             console.log('first');
