@@ -9,7 +9,9 @@ $(function(){
         function(){
             $('#output1').animate({
                 "padding":"20px",
-                "fontSize":"75px"
+                "fontSize":"75px",
+                "opacity":"0.5",
+                "left":"300px"
             })
             console.log('first');
         }
