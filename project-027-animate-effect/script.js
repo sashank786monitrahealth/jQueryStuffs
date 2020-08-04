@@ -8,7 +8,8 @@ $(function(){
     $('.btn').first().click(
         function(){
             $('#output1').animate({
-                "font-size":"25px"
+                "padding":"20px",
+                "fontSize":"75px"
             })
             console.log('first');
         }
