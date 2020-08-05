@@ -11,8 +11,9 @@ $(function(){
                 "padding":"20px",
                 "fontSize":"75px",
                 "opacity":"0.5",
-                "left":"300px"
-            })
+                "left":"300px",
+                "top":"300px"
+            }, 5000)
             console.log('first');
         }
     )
