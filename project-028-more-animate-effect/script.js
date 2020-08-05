@@ -9,7 +9,8 @@ $(function(){
         function(){
             $('#output1').animate({
                 "left":"+=50px",
-                "top":"+=50px"
+                "top":"+=50px",
+                "opacity":'toggle'
             }, 5000)
             console.log('first');
         }
@@ -37,7 +38,9 @@ $(function(){
             //console.log('last');
             $('#output2').animate({
                 height:'toggle'
-            },'slow')
+            },'slow', function(){
+                $('#output2').css('background-color','red')
+            })
         }
     )
 
