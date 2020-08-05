@@ -12,7 +12,7 @@ $(function(){
                 "fontSize":"75px",
                 "opacity":"0.5",
                 "left":"300px",
-                "top":"300px"
+                "top":"50px"
             }, 5000)
             console.log('first');
         }
@@ -21,6 +21,7 @@ $(function(){
 
     $('.btn:eq(1)').click(
         function(){
+            $('#output1').stop();
             console.log('second');
         }
     )
