@@ -19,7 +19,8 @@ $(function(){
                 opacity:"toggle"
             },option).animate({
                 left:150,
-                top:90
+                top:120,
+                opacity:"toggle"
             },option);
 
         }
