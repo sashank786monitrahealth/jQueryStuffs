@@ -16,6 +16,9 @@ $(function(){
             }, option).animate({
                 left:100,
                 top:70
+            },option).animate({
+                left:150,
+                top:90
             },option);
 
         }
