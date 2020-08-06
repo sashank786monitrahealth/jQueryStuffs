@@ -15,7 +15,8 @@ $(function(){
                 top:50
             }, option).animate({
                 left:100,
-                top:70
+                top:70,
+                opacity:"toggle"
             },option).animate({
                 left:150,
                 top:90
