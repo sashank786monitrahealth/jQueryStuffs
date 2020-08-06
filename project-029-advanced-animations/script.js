@@ -13,8 +13,11 @@ $(function(){
             $('#output1').animate({
                 left:200,
                 top:50
-            }, option);
-            
+            }, option).animate({
+                left:100,
+                top:70
+            },option);
+
         }
     )
 
