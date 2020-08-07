@@ -28,15 +28,16 @@ $(function(){
 
 
     $('.btn:eq(1)').click(
-        function(){
-            console.log('second');
-        }
-    )
 
-
-    $('.btn:eq(2)').click(
         function(){
-            console.log('third');
+            console.log(".btn:eq(1)");
+            $('#output2').animate({
+                left:250
+            }, {
+                duration:5000,
+                step:function(now,fx){
+                    console.log('left:'+now,fx);
+                }});
         }
     )
     $('.btn').last().click(
