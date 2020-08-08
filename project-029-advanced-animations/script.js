@@ -39,7 +39,7 @@ $(function(){
                     $(this).css('transform','rotate('+now+'deg)')
                 }
             }).animate({
-                left:-150
+                left:0
             },{
                 duration:5000,
                 step:function(now,fx){
