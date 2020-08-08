@@ -31,8 +31,15 @@ $(function(){
     $('.btn:eq(1)').click(  function(){
             console.log(".btn:eq(1)");
             $('#output2').animate({
-                left:150,
-                top:120
+                left:150
+            },{
+                duration:5000,
+                step:function(now,fx){
+                    console.log('left: '+now,fx);
+                    $(this).css('transform','rotate('+now+'deg)')
+                }
+            }).animate({
+                left:-150
             },{
                 duration:5000,
                 step:function(now,fx){
