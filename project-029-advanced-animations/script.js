@@ -1,5 +1,6 @@
 $(function(){
     $('#output1').css({'position':'relative'});
+    $('#output2').css({'position':'relative'});
     $('.btn').css({'border':'1px solid black', 
                    'padding':'10px',
                    'width':'150px'
@@ -27,17 +28,17 @@ $(function(){
     )
 
 
-    $('.btn:eq(1)').click(
-
-        function(){
+    $('.btn:eq(1)').click(  function(){
             console.log(".btn:eq(1)");
             $('#output2').animate({
-                left:250
-            }, {
+                left:150,
+                top:120
+            },{
                 duration:5000,
                 step:function(now,fx){
-                    console.log('left:'+now,fx);
-                }});
+                    console.log('left: '+now,fx);
+                }
+            });
         }
     )
     $('.btn').last().click(
