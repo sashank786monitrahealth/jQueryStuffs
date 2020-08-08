@@ -37,6 +37,7 @@ $(function(){
                 duration:5000,
                 step:function(now,fx){
                     console.log('left: '+now,fx);
+                    $(this).css('transform','rotate('+now+'deg)')
                 }
             });
         }
