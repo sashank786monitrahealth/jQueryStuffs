@@ -21,7 +21,7 @@ $(function(){
 
     $('.btn:eq(1)').click(function(){
 
-        var tempVal = $('#input1').val();
+        var tempVal = $.trim($('#input1').val());
         console.log(tempVal);
         console.log($.inArray(tempVal, myArray));
 
