@@ -16,10 +16,13 @@ $(function(){
            $('.highlight').animate({
                opacity:'1',
                letterSpacing:'+=10px',
-               lineHeight:'30px'
+               lineHeight:'30px',
+               "background-color":'red'
            },500).animate({
                opacity:'1'
-               , letterSpacing: '-=10px'
+               , letterSpacing: '-=10px',
+               lineHeight:'16px',
+               "background-color":'yellow'
            },500)
        }
 
