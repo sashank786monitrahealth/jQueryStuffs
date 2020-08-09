@@ -31,17 +31,17 @@ $(function(){
     $('.btn:eq(1)').click(  function(){
             console.log(".btn:eq(1)");
             $('#output2').animate({
-                left:150
+                left:'+=50'
             },{
-                duration:5000,
+                duration:1000,
                 step:function(now,fx){
                     console.log('left: '+now,fx);
                     $(this).css('transform','rotate('+now+'deg)')
                 }
             }).animate({
-                left:0
+                left:'+=50'
             },{
-                duration:5000,
+                duration:2000,
                 step:function(now,fx){
                     console.log('left: '+now,fx);
                     $(this).css('transform','rotate('+now+'deg)')

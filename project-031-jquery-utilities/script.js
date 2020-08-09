@@ -1,5 +1,5 @@
 $(function(){
-    var myArray = ["hello","world"];
+    var myArray = ["hello","world",55];
     $('#output1,#output2').css({
         'position':'relative'
     })
