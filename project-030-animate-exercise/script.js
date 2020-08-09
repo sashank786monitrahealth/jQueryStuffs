@@ -1,7 +1,8 @@
 $(function(){
  
     $('.btn').click(function(){
-        $(this).text();
+       var str = $(this).text().slice(-1);
+       console.log(str);
     })
 
 })
