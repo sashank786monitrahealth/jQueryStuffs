@@ -15,7 +15,8 @@ $(function(){
        if (str=='2'){
            $('.highlight').animate({
                opacity:'1',
-               letterSpacing:'+=10px'
+               letterSpacing:'+=10px',
+               lineHeight:'30px'
            },500).animate({
                opacity:'1'
                , letterSpacing: '-=10px'
