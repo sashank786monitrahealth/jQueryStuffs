@@ -10,6 +10,13 @@ $(function(){
                letterSpacing:'+=10px'
            })
        }
+
+       if (str=='2'){
+           $('.highlight').animate({
+               opacity:'1',
+               letterSpacing:'-=10px'
+           })
+       }
     })
     
 })
