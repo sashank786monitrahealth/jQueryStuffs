@@ -12,7 +12,11 @@ $(function(){
     })
 
     $('.btn').first().click(function(){
-        console.log($.isArray(myArray));
+        if($.isArray(myArray)){
+            $.each(myArray, function(index, value){
+               console.log(index, value);
+            })
+        }
     })
 
     $('.btn:eq(1)').click(function(){})
