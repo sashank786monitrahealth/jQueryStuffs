@@ -15,7 +15,17 @@ $(function(){
        if (str=='2'){
            $('.highlight').animate({
                opacity:'1',
-               letterSpacing:'-=10px'
+               letterSpacing:'+=10px'
+           },500).animate({
+               opacity:'1'
+               , letterSpacing: '-=10px'
+           },500)
+       }
+
+       if (str == '3'){
+           $('.highlight').animate({
+               opacity:'0.5'
+               , letterSpacing: '-=10px'
            })
        }
     })
