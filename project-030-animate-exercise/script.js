@@ -7,7 +7,8 @@ $(function(){
        if (str=='1'){
            $('.highlight').animate({
                opacity:'0.5',
-               letterSpacing:'+=10px'
+               letterSpacing:'+=10px',
+               marginTop:'+=10px'
            })
        }
 
