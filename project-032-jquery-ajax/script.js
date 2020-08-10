@@ -12,6 +12,7 @@ $(function(){
 
         if($(this).hasClass('btn-1')){
             console.log('one');
+            $('h1').load('hello.txt');
         }
 
 
