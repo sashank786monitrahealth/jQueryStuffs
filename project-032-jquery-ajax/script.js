@@ -15,7 +15,9 @@ $(function(){
             $('h1').load('hello.txt');
         }
 
-
+        if($(this).hasClass('btn-2')){
+            $('h1').load('hello.html')
+        }
     
 })
 
