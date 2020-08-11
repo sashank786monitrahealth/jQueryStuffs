@@ -16,7 +16,8 @@ $(function(){
         }
 
         if($(this).hasClass('btn-2')){
-            $('h1').load('hello.html .one')
+            //$('h1').load('hello.html .one')
+            $('h1').load('hello.html #two')
         }
     
 })
