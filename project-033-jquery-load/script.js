@@ -17,7 +17,7 @@ $(function(){
 
         if($(this).hasClass('btn-2')){
             //$('h1').load('hello.html .one')
-            $('#output2').load('hello.html #two')
+            $('#output2').load('hello.html#two')
         }
 
         if($(this).hasClass('btn-3')){
@@ -26,6 +26,9 @@ $(function(){
                 console.log(responseText);
                 console.log(status);
                 console.log(xhr);
+                if(status == "success"){
+                   console.log('yes we are connected.');
+                }
             });
         }
     
