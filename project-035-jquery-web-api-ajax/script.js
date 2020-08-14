@@ -11,7 +11,7 @@ $(function(){
             dataType: 'json',
             success: (function(data){
                      console.log('SUCCESS');
-                     console.log(data);
+                     console.log(data.results[0].picture.thumbnail);
             })
         })
     })
