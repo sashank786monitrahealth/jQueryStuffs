@@ -29,7 +29,7 @@ $(function(){
     $('.btn-2').click(function(e){
         var url = 'https://raw.githubusercontent.com/sashank786monitrahealth/jsonAJAX/master/db.json';
         $.get(url, function(data){
-            $('h1').html(data);
+            $('h1').html(JSON.parse(data)[0].info);
         })
 
     })
