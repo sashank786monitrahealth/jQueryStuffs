@@ -26,7 +26,14 @@ $(function(){
 
 
     $('.btn-3').click(function(e){
-  
+       var url = "https://raw.githubusercontent.com/mattdesl/marvel-characters/master/characters.json";
+
+       $.getJSON(url, function(data){
+           console.log(data);
+           $.each(data, function(i,v){
+               $("#output1").append(v + '<br>');
+           });
+       })
     })
 
 
