@@ -28,7 +28,7 @@ $(function(){
              url: url,
              data: myData,
              success: function(data){
-                 console.log(data);
+                 $('h1').html(data.input1);
              }
         })
     })
