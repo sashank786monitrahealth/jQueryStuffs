@@ -13,9 +13,7 @@ $(function(){
             dataType: 'json',
             success: (function(data){
                      var n = data.results[0];
-                     var fullName = n.name.first+' '+n.name.last;
-                     var userImage = n.picture.thumbnail;
-                     var html = '<div>'+fullName+'</div>'
+                     console.log(data);
             })
         })
     })
