@@ -12,8 +12,9 @@ $(function(){
             , success: (
                 function(data){
                     console.log(data);
-                    $.each(data.results, function(d){
-                        console.log(d);
+                    $.each(data, function(i, d){
+                        console.log(i,d);
+
                     })
                 })
         })
