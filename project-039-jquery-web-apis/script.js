@@ -15,6 +15,12 @@ $(function(){
 
 
     $('.btn-2').click(function(e){
+        var url = "https://swapi.dev/api/people/?format=json";
+        $.getJSON(url, function(data){
+            $.each(data.results, function(i,v){
+                $('#output1').append((v.name)+'<br>')
+            })
+        });
   
     })
 
