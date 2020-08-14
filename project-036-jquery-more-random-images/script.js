@@ -14,6 +14,9 @@ $(function(){
             success: (function(data){
                      var n = data.results[0];
                      console.log(data);
+                     $.each(data.results,function(i, v){
+                        console.log(v);
+                     })
             })
         })
     })
