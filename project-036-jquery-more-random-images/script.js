@@ -18,7 +18,7 @@ $(function(){
                         
                         var fullName = n.name.first + ' ' + n.name.last;
                         var userImage = n.picture.thumbnail;
-                            html += '<div>'+fullName+'</div><br> <img src="'+userImage+'">';
+                            html += '<span>'+' <img src="'+userImage+'"'+'</span>';
                         $('#output1').html(html);
                      })
             })
