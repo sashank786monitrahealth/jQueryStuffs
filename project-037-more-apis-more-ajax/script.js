@@ -13,8 +13,8 @@ $(function(){
                 function(data){
                     console.log(data);
                     $.each(data, function(i, d){
-                        console.log(data[i].description);
-
+                        //console.log(data[i].description);
+                    $('#output1').append(data[i].description+'<br><br><br>')
                     })
                 })
         })
