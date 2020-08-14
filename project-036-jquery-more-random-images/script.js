@@ -9,7 +9,7 @@ $(function(){
 
     $('.btn-2').click(function(e){
         jQuery.ajax({
-            url:'https://api.randomuser.me/?results=5',
+            url:'https://api.randomuser.me/?results=50',
             dataType: 'json',
             success: (function(data){
                      console.log(data);
