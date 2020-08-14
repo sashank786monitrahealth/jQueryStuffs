@@ -6,17 +6,12 @@ $(function(){
     })
 
     $('.btn-1').click(function(e){
-        $.ajax({
-            url:'https://api.github.com/gists'
-            , dataType: 'json'
-            , success: (
-                function(data){
-                    console.log(data);
-                    $.each(data, function(i, d){
-                        //console.log(data[i].description);
-                    $('#output1').append(data[i].description+'<br><br><br>')
-                    })
-                })
+        url='http://s179017901.onlinehome.us/discoveryvip/';
+
+        var myData = $('#myForm').serialize();
+        console.log(myData);
+        $.post(url,myData,function(i,d){
+             console.log(d);
         })
     })
 
