@@ -13,7 +13,7 @@ $(function(){
                 function(data){
                     console.log(data);
                     $.each(data, function(i, d){
-                        console.log(i,d);
+                        console.log(data[i].description);
 
                     })
                 })
