@@ -13,7 +13,7 @@ $(function(){
             dataType: 'json',
             success: (function(data){
                      console.log(data);
-                     var html = "";
+                     var html = "<h1>People</h1> <br><br><br>";
                      $.each(data.results,function(i, n){
                         
                         var fullName = n.name.first + ' ' + n.name.last;
