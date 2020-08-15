@@ -42,8 +42,14 @@ $(document).ready(function(){
             }
         }).done(function(data){
             //console.log(data);
+            var nextPage = data.nextPageToken;
+            var previousPage = data.prevPageToken;
+            var html = "";
             $.each(data['items'],function(index,value){
-              console.log(index,value);
+              //console.log(index,value);
+              html = value.snippet.title+'<br>';
+              console.log(html)
+              $('#output').append(html);
             })
         })
         /*
