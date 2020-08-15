@@ -15,14 +15,23 @@ Complete URL: https://www.googleapis.com/youtube/v3/search?q=test&part=snippet&k
 $(document).ready(function(){
 
     $('#searchButton').click(function(){
+        $('#input1').val()
+        var searchItem = $('#input1').val();
+
+        searchYoutube(searchItem);
+    })
+
+
+    function searchYoutube(searchItem){
+
         console.log('clicked.');
         console.log("API key: "+"AIzaSyC1SNw34ZsayRuVLUcp9_6FVFztafmZAHI");
         var apiKey = "AIzaSyC1SNw34ZsayRuVLUcp9_6FVFztafmZAHI";
-        var url = "https://www.googleapis.com/youtube/v3/search?q=test&part=snippet&key="+apiKey;
+        var url = "https://www.googleapis.com/youtube/v3/search?q="+searchItem+"&part=snippet&key="+apiKey;
         $.getJSON(url, function(data){
            console.log(data);
         })
-    })
+    }
 
 
 })
