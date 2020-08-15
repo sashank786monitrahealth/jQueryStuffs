@@ -27,10 +27,25 @@ $(document).ready(function(){
         console.log('clicked.');
         console.log("API key: "+"AIzaSyC1SNw34ZsayRuVLUcp9_6FVFztafmZAHI");
         var apiKey = "AIzaSyC1SNw34ZsayRuVLUcp9_6FVFztafmZAHI";
-        var url = "https://www.googleapis.com/youtube/v3/search?q="+searchItem+"&part=snippet&key="+apiKey;
+        //var url = "https://www.googleapis.com/youtube/v3/search?q="+searchItem+"&part=snippet&key="+apiKey;
+        var ajaxURL = "https://www.googleapis.com/youtube/v3/search";
+        $.ajax({
+            url: ajaxURL,
+            dataType: 'json',
+            type:'GET',
+            data: {
+                key:apiKey,
+                q:searchItem,
+                part:'snippet'
+            }
+        }).done(function(data){
+            console.log(data);
+        })
+        /*
         $.getJSON(url, function(data){
            console.log(data);
         })
+        */
     }
 
 
