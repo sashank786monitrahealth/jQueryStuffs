@@ -37,10 +37,14 @@ $(document).ready(function(){
                 key:apiKey,
                 q:searchItem,
                 part:'snippet',
-                maxResults:25
+                maxResults:25,
+                nextPageToken: "CBkQAA"
             }
         }).done(function(data){
-            console.log(data);
+            //console.log(data);
+            $.each(data['items'],function(index,value){
+              console.log(index,value);
+            })
         })
         /*
         $.getJSON(url, function(data){
