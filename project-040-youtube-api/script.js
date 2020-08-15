@@ -36,7 +36,8 @@ $(document).ready(function(){
             data: {
                 key:apiKey,
                 q:searchItem,
-                part:'snippet'
+                part:'snippet',
+                maxResults:25
             }
         }).done(function(data){
             console.log(data);
