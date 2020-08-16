@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Referencing</title>
+    <script src="assets/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#btnClick").click(function(){
+            $("#myPara").css("background-color","dodgerblue");
+        })
+    })
+    </script>
+</head>
+<body>
+    <p id="myPara">First jQuery</p>
+    <input type="button" id="btnClick" value="check">
+</body>
+</html>
