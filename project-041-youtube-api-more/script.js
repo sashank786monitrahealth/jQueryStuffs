@@ -37,7 +37,7 @@ $(document).ready(function(){
                 key:apiKey,
                 q:searchItem,
                 part:'snippet',
-                maxResults:5,
+                maxResults:1,
                 nextPageToken: "CBkQAA"
             }
         }).done(function(data){
@@ -47,11 +47,11 @@ $(document).ready(function(){
             var html = "";
             $.each(data['items'],function(index,value){
               html += `<div>`;
-              html += '<div><div class="title">'+value.snippet.title+`<div>`;
-              html += '<div class="url">'+value.id.videoId+`<div>`;
-              html += '<div class="thumbnail" src="'+value.snippet.thumbnails.medium.url+`"><div>`;
+              html += '<div><div class="title">'+value.snippet.title+`</div>`;
+              html += '<div class="url">'+value.id.videoId+`</div>`;
+              html += '<div class="thumbnail"><img src="'+value.snippet.thumbnails.medium.url+`"></div>`;
               html += `</div>`;
-              //console.log(value.snippet.title);
+              console.log(value.snippet);
               //console.log(value.id.videoId);
               //console.log(value.snippet.thumbnails.medium.url);
               //html = value.snippet.thumbnails.medium.url+'<br>';

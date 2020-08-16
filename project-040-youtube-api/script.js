@@ -46,8 +46,10 @@ $(document).ready(function(){
             var previousPage = data.prevPageToken;
             var html = "";
             $.each(data['items'],function(index,value){
-              //console.log(index,value);
-              html = value.snippet.title+'<br>';
+              console.log(value.snippet.title);
+              console.log(value.id.videoId);
+              console.log(value.snippet.thumbnails.medium.url);
+              html = value.snippet.thumbnails.medium.url+'<br>';
               console.log(html)
               $('#output').append(html);
             })
