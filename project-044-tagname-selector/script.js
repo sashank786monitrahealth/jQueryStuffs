@@ -1,5 +1,10 @@
 $(document).ready(function(){
     $("#btnFirst").click(function(){
-        $("p").css('background-color',"yellow");
-    })
+        $("ol").css('background-color',"yellow");
+    });
+
+
+    $("#btnSecond").click(function(){
+        $("ul").css('background-color',"yellow");
+    });
 })
