@@ -7,4 +7,9 @@ $(document).ready(function(){
     $("#btnSecond").click(function(){
         $("ul").css('background-color',"yellow");
     });
+
+
+    $("#btnThird").click(function(){
+        $("button").css('background-color',"pink");
+    });
 })
