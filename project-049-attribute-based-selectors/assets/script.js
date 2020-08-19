@@ -1,7 +1,12 @@
 
 $(function(){
-    $("#btnClick").click(function(){
-        $("[class]").css("color","red");
+    $("#btnClick1").click(function(){
+        $("p[class!=paras]").css("color","red");
+        //$("[btn]").css("color","red");
+    })
+    $("#btnClick2").click(function(){
+        //$("[class]").css("color","red");
+        $("[id]").css("color","purple");
     })
 })
 /*
