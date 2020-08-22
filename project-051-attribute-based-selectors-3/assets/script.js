@@ -6,7 +6,7 @@ $(function(){
     })
     $("#btnClick2").click(function(){
         //$("[class]").css("color","red");
-        $("[id]").css("color","chartreuse");
+        $("[id ~=first]").css("color","chartreuse");
     })
     $("#btnClick3").click(function(){
         $("[id $=th]").css("color","violet");
