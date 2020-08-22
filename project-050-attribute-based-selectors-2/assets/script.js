@@ -9,7 +9,7 @@ $(function(){
         $("[id]").css("color","chartreuse");
     })
     $("#btnClick3").click(function(){
-        $("[id $=para]").css("color","violet");
+        $("[id $=th]").css("color","violet");
         //$("[btn]").css("color","red");
     })
 })
