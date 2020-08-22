@@ -8,6 +8,10 @@ $(function(){
         //$("[class]").css("color","red");
         $("[id]").css("color","chartreuse");
     })
+    $("#btnClick3").click(function(){
+        $("[id $=para]").css("color","violet");
+        //$("[btn]").css("color","red");
+    })
 })
 /*
     $(document).ready(function(){       
