@@ -12,6 +12,10 @@ $(function(){
         $("[id $=th]").css("color","violet");
         //$("[btn]").css("color","red");
     })
+    $("#btnClick4").click(function(){
+        $("[id *=Click]").css("color","chartreuse");
+        //$("[btn]").css("color","red");
+    })
 })
 /*
     $(document).ready(function(){       
