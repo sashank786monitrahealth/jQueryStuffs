@@ -1,7 +1,7 @@
 
 $(function(){
     $("#btnClick1").click(function(){
-        $("[id^=first]").css("color","red");
+        $("[id |=first]").css("color","red");
         //$("[btn]").css("color","red");
     })
     $("#btnClick2").click(function(){
